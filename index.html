@@ -444,16 +444,16 @@
 						<h2 class="heading">Contact Me</h2>
 						<span>get in touch with me</span>
 					</div>
-					<form action="#" method="">
+					<form action="enviarCorreo.php" method="post" enctype="multipart/form-data">
 						<div class="input-box">
-							<input type="text" placeholder=" first name">
-							<input type="text" placeholder=" last name">
+							<input type="text" name="name" placeholder=" first name" required>
+							<input type="text" name="lname" placeholder=" last name" required>
 						</div>
-						<input type="email" placeholder=" email">
-						<input type="text" placeholder=" subject">
-						<textarea name="#" id="" cols="30" rows="10" placeholder="Message"></textarea>
+						<input type="email" name="email" placeholder=" email" required>
+						<input type="text" name="subject" placeholder=" subject" required>
+						<textarea name="#" name="text" id="" cols="30" rows="10" required placeholder="Message"></textarea>
 						<div class="formBtn">
-							<button class="btn" type="submit">Send Message</button>
+							<button class="btn" name="send" type="submit">Send Message</button>
 						</div>
 					</form>
 				</div>
